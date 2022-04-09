@@ -1,0 +1,7 @@
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\bin\Debug\HCTPRosterRandomizer.exe
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\bin\Debug\HCTPRosterRandomizer.pdb
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.csproj.AssemblyReference.cache
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.csproj.SuggestedBindingRedirects.cache
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.csproj.CoreCompileInputs.cache
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.exe
+C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.pdb
