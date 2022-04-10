@@ -43,6 +43,7 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Superstars\Athletes.cs" />
         <Compile Include="Superstars\Wrestler.cs" />
+        <Compile Include="Utils\RosterRandomizer.cs" />
         <Compile Include="Utils\TitleHoldersExcluder.cs" />
     </ItemGroup>
     <ItemGroup>

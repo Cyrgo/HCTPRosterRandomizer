@@ -4,7 +4,6 @@ namespace HCTPRosterRandomizer.Superstars {
     public class Athletes {
         public List<Wrestler> MaleWrestlers { get; set; }
         public List<Wrestler> FemaleWrestlers { get; set; }
-        // public List<Wrestler> OtherWrestlers { get; }
 
         public Athletes() {
             this.MaleWrestlers = new List<Wrestler>() {
