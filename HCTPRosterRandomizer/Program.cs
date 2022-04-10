@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using HCTPRosterRandomizer.Superstars;
 using HCTPRosterRandomizer.Utils;
@@ -25,6 +26,12 @@ namespace HCTPRosterRandomizer {
             foreach (var female in randomizedFemales) {
                 Console.WriteLine(female.Name);
             }
+
+            var maleSplit = randomizedMales.Count / 2;
+            Console.WriteLine(maleSplit.ToString());
+            var maleRemainder = athletes.MaleWrestlers.Count - maleSplit;
+            Console.WriteLine(maleRemainder.ToString());
+            
         }
     }
 }
