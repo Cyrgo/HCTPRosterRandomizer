@@ -5,7 +5,7 @@ using HCTPRosterRandomizer.Superstars;
 
 namespace HCTPRosterRandomizer.Utils {
     public static class TitleHoldersExcluder {
-        public static IEnumerable<Wrestler> MaleExcluder(List<Wrestler> maleWrestlers) {
+        public static List<Wrestler> MaleExcluder(List<Wrestler> maleWrestlers) {
             Console.WriteLine("Who is the WWE Champion?");
             var wWEChampion = Console.In.ReadLine();
 
@@ -34,60 +34,33 @@ namespace HCTPRosterRandomizer.Utils {
             var wWECruiserWeightChampion = Console.In.ReadLine();
 
             Console.WriteLine("Who is the WWE Hardcore Champion?");
-            var wWEHardCoreWeightChampion = Console.In.ReadLine();
+            var wWEHardCoreChampion = Console.In.ReadLine();
 
-            var rosterWithChampions = new List<Wrestler>();
-            foreach (var male in maleWrestlers) {
-                if (male.Name == wWEChampion ||
-                    male.Name == worldChampion ||
-                    male.Name == firstWWETagChampion ||
-                    male.Name == secondWWETagChampion ||
-                    male.Name == firstWorldTagChampion ||
-                    male.Name == secondWorldTagChampion ||
-                    male.Name == wWEIntercontinentalChampion ||
-                    male.Name == wWEUSChampion ||
-                    male.Name == wWECruiserWeightChampion ||
-                    male.Name == wWEHardCoreWeightChampion) {
-                    male.TitleHolder = true;
-                }
-
-                rosterWithChampions.Add(male);
+            foreach (var male in maleWrestlers.Where(male =>
+                         male.Name == wWEChampion ||
+                         male.Name == worldChampion ||
+                         male.Name == firstWWETagChampion ||
+                         male.Name == secondWWETagChampion ||
+                         male.Name == firstWorldTagChampion ||
+                         male.Name == secondWorldTagChampion ||
+                         male.Name == wWEIntercontinentalChampion ||
+                         male.Name == wWEUSChampion ||
+                         male.Name == wWECruiserWeightChampion ||
+                         male.Name == wWEHardCoreChampion)) {
+                male.TitleHolder = true;
             }
 
-            var postExclusion = new List<Wrestler>();
-            foreach (var male in rosterWithChampions) {
-                if (male.TitleHolder) {
-                    maleWrestlers.Remove(male);
-                }
-
-                postExclusion.Add(male);
-            }
-
-            return postExclusion.ToList();
+            return maleWrestlers.Where(male => !male.TitleHolder).ToList();
         }
-        
-        public static IEnumerable<Wrestler> FemaleExcluder(List<Wrestler> femaleWrestlers) {
+
+        public static List<Wrestler> FemaleExcluder(List<Wrestler> femaleWrestlers) {
             Console.WriteLine("Who is the WWE Women's Champion?");
             var wWEWomenChampion = Console.In.ReadLine();
-            var rosterWithChampion = new List<Wrestler>();
-            foreach (var female in femaleWrestlers) {
-                if (female.Name == wWEWomenChampion) {
-                    female.TitleHolder = true;
-                }
-
-                rosterWithChampion.Add(female);
+            foreach (var female in femaleWrestlers.Where(female => female.Name == wWEWomenChampion)) {
+                female.TitleHolder = true;
             }
 
-            var postExclusion = new List<Wrestler>();
-            foreach (var female in rosterWithChampion) {
-                if (female.TitleHolder) {
-                    femaleWrestlers.Remove(female);
-                }
-
-                postExclusion.Add(female);
-            }
-
-            return postExclusion.ToList();
+            return femaleWrestlers.Where(female => !female.TitleHolder).ToList();
         }
     }
 }
