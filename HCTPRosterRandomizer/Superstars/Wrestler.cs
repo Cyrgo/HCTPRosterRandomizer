@@ -9,10 +9,12 @@ namespace HCTPRosterRandomizer.Superstars {
     public class Wrestler {
         public string Name { get; set; }
         public Gender Gender { get; set; }
+        public bool TitleHolder { get; set; }
         
-        public Wrestler(string name, Gender gender) {
+        public Wrestler(string name, Gender gender, bool titleHolder) {
             this.Name = name;
             this.Gender = gender;
+            this.TitleHolder = titleHolder;
         }
     }
 }

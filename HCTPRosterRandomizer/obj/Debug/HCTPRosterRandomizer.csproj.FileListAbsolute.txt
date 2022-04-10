@@ -5,3 +5,9 @@ C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug
 C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.csproj.CoreCompileInputs.cache
 C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.exe
 C:\Users\cyrgo\RiderProjects\HCTPRosterRandomizer\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.pdb
+C:\SideProjects\HCTPRosterRandomizer\bin\Debug\HCTPRosterRandomizer.exe
+C:\SideProjects\HCTPRosterRandomizer\bin\Debug\HCTPRosterRandomizer.pdb
+C:\SideProjects\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.csproj.AssemblyReference.cache
+C:\SideProjects\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.csproj.CoreCompileInputs.cache
+C:\SideProjects\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.exe
+C:\SideProjects\HCTPRosterRandomizer\obj\Debug\HCTPRosterRandomizer.pdb

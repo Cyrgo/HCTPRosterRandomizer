@@ -9,7 +9,7 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>HCTPRosterRandomizer</RootNamespace>
         <AssemblyName>HCTPRosterRandomizer</AssemblyName>
-        <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     </PropertyGroup>
@@ -43,6 +43,10 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Superstars\Athletes.cs" />
         <Compile Include="Superstars\Wrestler.cs" />
+        <Compile Include="Utils\TitleHoldersExcluder.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Notes\belts.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
